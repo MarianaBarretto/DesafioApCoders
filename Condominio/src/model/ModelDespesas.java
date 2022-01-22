@@ -11,6 +11,7 @@ public class ModelDespesas {
     private double valor;
     private String vencimentoFatura;
     private String statusPagamento;
+    private String condominio;
 
     /**
     * Construtor
@@ -95,14 +96,22 @@ public class ModelDespesas {
         this.statusPagamento = pStatusPagamento;
     }
     /**
-    * @return statusPagamento
+    * @return condominio
     */
     public String getStatusPagamento(){
         return this.statusPagamento;
     }
-
+    public void setCondominio(String pCondominio){
+        this.condominio = pCondominio;
+    }
+    /**
+    * @return condominio
+    */
+    public String getCondominio(){
+        return this.condominio;
+    }
     @Override
     public String toString(){
-        return "ModelDespesas {" + "::idDespesas = " + this.idDespesas + "::descricao = " + this.descricao + "::tipoDespesa = " + this.tipoDespesa + "::valor = " + this.valor + "::vencimentoFatura = " + this.vencimentoFatura + "::statusPagamento = " + this.statusPagamento +  "}";
+        return "ModelDespesas {" + "::idDespesas = " + this.idDespesas + "::descricao = " + this.descricao + "::tipoDespesa = " + this.tipoDespesa + "::valor = " + this.valor + "::vencimentoFatura = " + this.vencimentoFatura + "::statusPagamento = " + this.statusPagamento + "::condominio = " + this.condominio +  "}";
     }
 }

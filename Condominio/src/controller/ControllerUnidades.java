@@ -38,7 +38,9 @@ public class ControllerUnidades {
     public ArrayList<ModelUnidades> getListaUnidadesController(){
         return this.daoUnidades.getListaUnidadesDAO();
     }
-
+//    public ArrayList<ModelUnidades> getListaUnidadesComFiltroController(String tipoFatura){
+//        return this.daoUnidades.getListaUnidadesComFiltroDAO(tipoFatura);
+//    }
     /**
     * atualiza Unidades
     * @param pModelUnidades

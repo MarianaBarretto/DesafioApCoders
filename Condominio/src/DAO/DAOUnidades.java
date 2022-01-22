@@ -127,7 +127,44 @@ public class DAOUnidades extends ConexaoSQLite {
         }
         return listamodelUnidades;
     }
-
+//    public ArrayList<ModelUnidades> getListaUnidadesComFiltroDAO(String tipoFatura){
+//        ArrayList<ModelUnidades> listamodelUnidades = new ArrayList();
+//        ModelUnidades modelUnidades = null;
+//
+//        String sql = "SELECT "
+//                    + "pk_id_unidades,"
+//                    + "identificacao,"
+//                    + "proprietario,"
+//                    + "condominio,"
+//                    + "endereco"
+//                 + " FROM"
+//                     + " tbl_unidades"
+//                + " WHERE"
+//                     + " identificacao = ?"
+//                + ";";
+//
+//        this.conectar();
+//
+//        try (PreparedStatement preparedStatement = criarPreparedStatement(sql)){
+//             preparedStatement.setString(1,tipoFatura);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//
+//            while (resultSet.next()) {
+//                modelUnidades = new ModelUnidades();
+//                modelUnidades.setIdUnidades(resultSet.getInt(1));
+//                modelUnidades.setIdentificacao(resultSet.getString(2));
+//                modelUnidades.setProprietario(resultSet.getString(3));
+//                modelUnidades.setCondominio(resultSet.getString(4));
+//                modelUnidades.setEndereco(resultSet.getString(5));
+//                listamodelUnidades.add(modelUnidades);
+//            }
+//        }catch(Exception e){
+//            e.printStackTrace();
+//        }finally{
+//            this.desconectar();
+//        }
+//        return listamodelUnidades;
+//    }
     /**
     * atualiza Unidades
     * @param pModelUnidades

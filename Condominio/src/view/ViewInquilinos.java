@@ -105,6 +105,7 @@ public class ViewInquilinos extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jtInquilinos);
 
+        jbSalvar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/salvar.png"))); // NOI18N
         jbSalvar.setText("Salvar");
         jbSalvar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

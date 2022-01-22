@@ -38,7 +38,12 @@ public class ControllerDespesas {
     public ArrayList<ModelDespesas> getListaDespesasController(){
         return this.daoDespesas.getListaDespesasDAO();
     }
-
+    public ArrayList<ModelDespesas> getListaDespesasComFiltroController(String condominio){
+        return this.daoDespesas.getListaDespesasComFiltroDAO(condominio);
+    }
+    public ArrayList<ModelDespesas> getListaDespesasVencidasController(String vencimento){
+        return this.daoDespesas.getListaDespesasVencidasDAO(vencimento);
+    }
     /**
     * atualiza Despesas
     * @param pModelDespesas
@@ -56,4 +61,5 @@ public class ControllerDespesas {
     public boolean excluirDespesasController(int pIdDespesas){
         return this.daoDespesas.excluirDespesasDAO(pIdDespesas);
     }
+
 }

@@ -63,10 +63,13 @@
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jtfCondominio" min="-2" pref="176" max="-2" attributes="0"/>
-                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="jcbCondominio" pref="178" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="20" max="32767" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                               <Component id="jtfEndereco" min="-2" pref="194" max="-2" attributes="0"/>
@@ -100,7 +103,7 @@
                       <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                           <Component id="jtfIdentificacao" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jtfProprietario" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jtfCondominio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jcbCondominio" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jtfEndereco" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -135,8 +138,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtfEnderecoActionPerformed"/>
           </Events>
-        </Component>
-        <Component class="javax.swing.JTextField" name="jtfCondominio">
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <AuxValues>
@@ -188,6 +189,9 @@
         </Container>
         <Component class="javax.swing.JButton" name="jbSalvar">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/salvar.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Salvar"/>
           </Properties>
           <Events>
@@ -210,6 +214,19 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Propriet&#xe1;rio"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="jcbCondominio">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="2">
+                <StringItem index="0" value="Mar e Sol"/>
+                <StringItem index="1" value="Solar"/>
+              </StringArray>
+            </Property>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
