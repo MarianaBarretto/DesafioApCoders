@@ -18,7 +18,7 @@ Criei um projeto estruturado com padrões de arquitetura MVC e uma interface gr�
    ### Banco de dados:
       1.    Faça o download do arquivo ZIP do projeto 
       2.    Se não tiver o NetBeans instalado na sua máquina faça o download.
-      3.    Abra o NetBeans clique em File > Import Project > From Zip > na opção Zip File           clique em Browse > va até a pasta que salvou o projeto, selecione e clique em             abrir.
+      3.    Abra o NetBeans clique em File > Import Project > From Zip > na opção Zip File clique em Browse > va até a pasta que salvou o projeto, selecione e clique em abrir.
       4.    Execute o projeto na tela principal.
 
 ## Documentação: 
