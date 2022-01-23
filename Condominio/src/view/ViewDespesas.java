@@ -6,7 +6,7 @@ import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.ModelDespesas;
-
+import util.Formatador;
 
 /**
  *
@@ -281,7 +281,7 @@ private void limparFormulario(){
         modelDespesas = new ModelDespesas();
         modelDespesas.setDescricao(jtfDescricao.getText());
         modelDespesas.setTipoDespesa(jtfTipo.getText());
-        modelDespesas.setValor(Double.parseDouble(jtfValor.getText()));
+        modelDespesas.setValor(new Formatador().converterVirgulaParaPonto(jtfValor.getText()));
         modelDespesas.setVencimentoFatura(jtfVencimento.getText());
         modelDespesas.setStatusPagamento(jcbStatus.getSelectedItem().toString());
         modelDespesas.setCondominio(jcbCondominio.getSelectedItem().toString());
