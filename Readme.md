@@ -1,6 +1,6 @@
 # Desafio Ap.Coders
 
-## Terceira etapa do processo seletivo da Ap.Coders: O desaffio é implementar um sistema que auxilie no cadastro e gestão dos inquilinos e unidades de um condomínio.
+## Terceira etapa do processo seletivo da Ap.Coders: O desafio é implementar um sistema que auxilie no cadastro e gestão dos inquilinos e unidades de um condomínio.
 
 ## Sobre: 
 Criei um projeto estruturado com padrões de arquitetura MVC e uma interface gráfica interativa, que auxilia no cadastro e gestão dos inquilinos e unidades utilizando linguagem de programação Java e o banco de dados SQLite. No programa é possível cadastrar inquilinos e unidades, cadastrar e editar despesas das unidades, filtrar por unidades e filtrar por faturas vencidas, pagas e a pagar. 
